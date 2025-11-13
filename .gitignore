@@ -1,0 +1,35 @@
+# Dependencies
+/vendor/
+composer.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+storage/ratelimit/*.json
+
+# Uploads (keep .htaccess)
+uploads/*
+!uploads/.htaccess
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+check_*.php
+
+# Postman environments
+*.postman_environment.json
