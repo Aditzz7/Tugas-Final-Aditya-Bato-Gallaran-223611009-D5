@@ -1,8 +1,0 @@
-RewriteEngine On
-
-# Allow direct access to uploads directory
-RewriteRule ^uploads/ - [L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.php [QSA,L]
