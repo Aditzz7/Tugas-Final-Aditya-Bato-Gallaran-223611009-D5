@@ -90,6 +90,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 // ===== Daftar Route =====
 $routes = [
+    ['GET', '/', 'Src\Controllers\HealthController@show'],
     ['GET', '/api/v1/health', 'Src\Controllers\HealthController@show'],
     ['GET', '/api/v1/version', 'Src\Controllers\VersionController@show'],
     ['POST', '/api/v1/auth/login', 'Src\Controllers\AuthController@login'],
